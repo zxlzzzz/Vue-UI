@@ -1,0 +1,8 @@
+{
+  "name": "Vue UI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zhangxiaolin999/Vue-UI.git",
+  "author": "zhangxiaolin <zhangxiaolin@sunniwell.net>",
+  "license": "MIT"
+}
