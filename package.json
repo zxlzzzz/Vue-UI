@@ -1,8 +1,11 @@
 {
-  "name": "Vue UI",
+  "name": "VueUI",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/zhangxiaolin999/Vue-UI.git",
   "author": "zhangxiaolin <zhangxiaolin@sunniwell.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }
