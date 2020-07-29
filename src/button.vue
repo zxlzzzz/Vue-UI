@@ -11,7 +11,16 @@
 
 <script>
 export default {
-  props: ["icon", "iconPosition"],
+  props: {
+    iconPosition: {
+      type: String,
+      default: "left",
+      validator(value) {
+        return !(value !== "left" && value !== "right"); // simplify
+      },
+    },
+    icon: {},
+  },
 };
 </script>
 <style lang=scss scoped>
