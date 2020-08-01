@@ -15,7 +15,10 @@ new Vue({
 })
 // 测试用例
 import chai from 'chai'
+import spies from 'chai-spies';
+chai.use(spies)
 const expect = chai.expect;
+
 
 {
      const Constructor = Vue.extend(Button)
@@ -70,9 +73,13 @@ const expect = chai.expect;
         }
     })
     vm.$mount()
-    vm.$on('click',function () {
-        expect(1).to.eq(1)
+    // 使用函数监听    ps:spy 间谍
+    let spy = chai.spy(function(){
+
     })
+    vm.$on('click',spies)
     let button = vm.$el
     button.click()
+    //      我们期待出发click事件的时候 spy(间谍) 已经被调用了
+    expect(spy).to.have.been.called() // 函数的mock
 }
