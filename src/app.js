@@ -19,10 +19,10 @@ import spies from 'chai-spies'
 chai.use(spies)
 const expect = chai.expect;
 {
-     const Constructor = Vue.extend(Button)
-    let button  = new Constructor({
-        propsData:{
-            icon:'setings'
+    const Constructor = Vue.extend(Button)
+    let button = new Constructor({
+        propsData: {
+            icon: 'setings'
         }
     })
     button.$mount('#test')
@@ -34,10 +34,10 @@ const expect = chai.expect;
 }
 {
     const Constructor = Vue.extend(Button)
-    let button  = new Constructor({
-        propsData:{
-            icon:'loading',
-            loading:true
+    let button = new Constructor({
+        propsData: {
+            icon: 'loading',
+            loading: true
         }
     })
     button.$mount()
@@ -51,29 +51,29 @@ const expect = chai.expect;
     const div = document.createElement('div')
     document.body.appendChild(div)
     const Constructor = Vue.extend(Button)
-    let button  = new Constructor({
-        propsData:{
-            icon:'loading'
+    let button = new Constructor({
+        propsData: {
+            icon: 'loading'
         }
     })
     button.$mount(div)
     let svg = button.$el.querySelector('svg')
-    let {order} = window.getComputedStyle(svg)
+    let { order } = window.getComputedStyle(svg)
     expect(order).to.eq('1')
     button.$el.remove()
     button.$destroy()
 }
 {
     const Constructor = Vue.extend(Button)
-    let vm  = new Constructor({
-        propsData:{
-            icon:'setings'
+    let vm = new Constructor({
+        propsData: {
+            icon: 'setings'
         }
     })
     vm.$mount()
     // 使用函数监听
     let spy = chai.spy(function () {
-})
+    })
     vm.$on('click', spy)
     let button = vm.$el
     button.click()
