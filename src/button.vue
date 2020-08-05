@@ -9,7 +9,6 @@
 </template>
 
 <script>
-  import Vue from 'vue'
   import Icon from './icon'
 export default {
   components:{
@@ -31,7 +30,7 @@ export default {
   },
 };
 </script>
-<style lang=scss scoped>
+<style lang='scss' scoped>
 @keyframes spin {
   0% {
     transform: rotate(0deg);
