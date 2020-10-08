@@ -2,7 +2,7 @@
 node_modules/
 /dist
 /public
-.idea
+.idea/
 
 
 # Log files
