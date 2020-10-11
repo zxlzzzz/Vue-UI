@@ -1,5 +1,5 @@
 <template>
-  <div class="col" :class="[`col-${span}`]">
+  <div class="col" :class="[`col-${span}`, offset && `offset-${offset}`]">
     <slot></slot>
   </div>
 </template>
@@ -8,6 +8,7 @@
 export default {
   props: {
     span: [Number, String],
+    offset: [Number, String],
   },
 };
 </script>
@@ -22,6 +23,13 @@ export default {
   @for $n from 1 through 24 {
     &.#{$class-prefix}#{$n} {
       width: ($n / 24) * 100%;
+    }
+  }
+
+  $class-offset: offset-;
+  @for $n from 1 through 24 {
+    &.#{$class-offset}#{$n} {
+      margin-left: ($n / 24) * 100%;
     }
   }
 }

@@ -21,20 +21,6 @@ new Vue({
         loading2: false,
         message: '123'
     },
-    methods: {
-        changeInput(e) {
-            console.log(e)
-        },
-        changeInputs(e) {
-            console.log(e)
-        },
-        changefocus(e) {
-            console.log(e)
-        },
-        changeblur(e) {
-            console.log(e)
-        }
-    }
 })
 // 测试用例
 import chai from 'chai'

@@ -46,10 +46,6 @@
         </g-button-group>
         <g-input value="文字" disabled style="margin-top: 10px;margin-left:10px"></g-input>
         <g-input value="文字" readonly style="margin-top: 10px;margin-left:10px"></g-input>
-        <g-input value="change" @change='changeInput' style="margin-top: 10px;margin-left:10px"></g-input>
-        <g-input value="input" @input='changeInputs' style="margin-top: 10px;margin-left:10px"></g-input>
-        <g-input value="focus" @focus='changefocus' style="margin-top: 10px;margin-left:10px"></g-input>
-        <g-input value="blur" @blur='changeblur' style="margin-top: 10px;margin-left:10px"></g-input>
         <g-input v-model='message' style="margin-top: 10px;margin-left:10px"></g-input>
         <div>
             <g-input value="文字" error="姓名不能少于2个字" style="margin-top: 10px;margin-left:10px"></g-input>
@@ -57,7 +53,7 @@
         <div>
             <g-row>
                 <g-col span='2'>1</g-col>
-                <g-col>2</g-col>
+                <g-col span='21' offset='1'>2</g-col>
             </g-row>
         </div>
     </div>
