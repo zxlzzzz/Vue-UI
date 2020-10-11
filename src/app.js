@@ -6,13 +6,27 @@ import Input from './Input'
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
 Vue.component('g-button-group', GroupButton)
-Vue.component('g-input',Input)
+Vue.component('g-input', Input)
 
 new Vue({
     el: '#app',
     data: {
         loading1: false,
         loading2: false,
+    },
+    methods: {
+        changeInput(e) {
+            console.log(e.target.value)
+        },
+        changeInputs(e) {
+            console.log(e.target.value)
+        },
+        changefocus(e) {
+            console.log(e)
+        },
+        changeblur(e) {
+            console.log(e)
+        }
     }
 })
 // 测试用例
@@ -85,9 +99,9 @@ try {
         expect(spy).to.have.been.called()
     }
 } catch (error) {
-  window.errors = [error]
+    window.errors = [error]
 } finally {
-   window.errors && window.errors.forEach((error)=>{
+    window.errors && window.errors.forEach((error) => {
         console.error(error.message)
     })
 }

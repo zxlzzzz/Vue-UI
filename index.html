@@ -45,15 +45,20 @@
             <g-button icon="right" icon-position="right">下一页</g-button>
         </g-button-group>
         <g-input value="文字" disabled style="margin-top: 10px;margin-left:10px"></g-input>
-        <g-input value="文字" readonly  style="margin-top: 10px;margin-left:10px"></g-input>
+        <g-input value="文字" readonly style="margin-top: 10px;margin-left:10px"></g-input>
+        <g-input value="change" @change='changeInput' style="margin-top: 10px;margin-left:10px"></g-input>
+        <g-input value="input" @input='changeInputs' style="margin-top: 10px;margin-left:10px"></g-input>
+        <g-input value="focus" @focus='changefocus' style="margin-top: 10px;margin-left:10px"></g-input>
+        <g-input value="blur" @blur='changeblur' style="margin-top: 10px;margin-left:10px"></g-input>
         <div>
-            <g-input value="文字" error="姓名不能少于2个字"   style="margin-top: 10px;margin-left:10px"></g-input>
+            <g-input value="文字" error="姓名不能少于2个字" style="margin-top: 10px;margin-left:10px"></g-input>
         </div>
     </div>
-<div id="test">
+    <div id="test">
 
-</div>
+    </div>
 </body>
 <script src="./src/app.js"></script>
 <script src="./src/svg.js"></script>
+
 </html>
