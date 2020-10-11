@@ -13,13 +13,14 @@ new Vue({
     data: {
         loading1: false,
         loading2: false,
+        message: '123'
     },
     methods: {
         changeInput(e) {
-            console.log(e.target.value)
+            console.log(e)
         },
         changeInputs(e) {
-            console.log(e.target.value)
+            console.log(e)
         },
         changefocus(e) {
             console.log(e)
