@@ -7,15 +7,12 @@
   "license": "MIT",
   "dependencies": {
     "vue": "^2.6.11",
-    "vue-hot-reload-api": "^2.3.4",
-    "vuepress-theme-reco": "^1.5.7"
+    "vue-hot-reload-api": "^2.3.4"
   },
   "scripts": {
     "start": "npx parcel index.html --no-cache",
     "dev-test": "parcel watch test/* --no-cache & karma start",
-    "test": "parcel build test/* --no-minify && karma start --single-run",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "test": "parcel build test/* --no-minify && karma start --single-run"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
@@ -36,7 +33,6 @@
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
     "vue-template-compiler": "^2.6.11",
-    "vuepress": "^1.6.0",
     "webpack": "^5.0.0"
   },
   "alias": {
